@@ -1,0 +1,57 @@
+{% extends "index.html" %}
+
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="col-xl-auto">
+            <div class="row justify-content-center">
+                <h3>{{ here }}</h3>
+            </div>
+
+            <br>
+
+            <div class="row justify-content-center">
+                <div class="list-group">
+                    <li class="list-group-item"><img src="{{ top_img }}" class="img-fluid"></li>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <p class="h1">{{ title }}</p>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <h2>by {{ author }}</h2>
+            </div>
+            <div class="row justify-content-center">
+                <h3>Published: {{ published }}</h3>
+            </div>
+            <div class="row justify-content-center">
+                <h4>{{ summary }}</h4>
+            </div>
+            <div class="row justify-content-center">
+                <div class="list-group">
+                    <li class="list-group-item">
+                        <p>{{ text }}</p>
+                    </li>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <video>
+                    <source="{{ vids }}" type="video/mp4">
+                    <source="{{ vids }}" type="video/ogg">
+                    <source="{{ vids }}" type="video/webm">
+                </video>
+            </div>
+            <div class="row justify-content-center">
+                <h3>Further images:</h3>
+                {% for link in furth_img %}
+                    <div class="list-group">
+                        <li class="list-group-item"><img src="{{ link }}" class="img-fluid"></li>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

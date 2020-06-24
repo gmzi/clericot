@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+
+[packages]
+django = "*"
+pylint-django = "*"
+newspaper3k = "*"
+feedparser = "*"
+html5lib = "*"
+lxml = "*"
+requests = "*"
+django-widget-tweaks = "*"
+
+[requires]
+python_version = "3.8"
