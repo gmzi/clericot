@@ -1,1 +1,1 @@
-web: gunicorn videotracker.wsgi
+web: gunicorn clericot.wsgi
